@@ -160,7 +160,7 @@ body{
   </div>
 </div>
 
-<!-- ID (137XXXXXXX, ровно 10 цифр) -->
+<!-- ID (138XXXXXXX, ровно 10 цифр) -->
 <div id="idModal" class="modal-overlay" aria-hidden="true">
   <div class="modal" role="dialog" aria-modal="true" tabindex="-1">
     <div class="modal-card p-6 md:p-7">
@@ -302,8 +302,8 @@ elGate.btn.addEventListener('click', ()=>{
 });
 elGate.pass.addEventListener('keydown', (e)=>{ if(e.key==='Enter'){ e.preventDefault(); elGate.btn.click(); }});
 
-/* id (strict: 137 + 7 digits = 10) */
-const ID_RE = /^137\d{7}$/;
+/* id (strict: 138 + 7 digits = 10) */
+const ID_RE = /^138\d{7}$/;
 elId.input.addEventListener('input', ()=>{
   const v = (elId.input.value||'').replace(/\D+/g,'').slice(0,10);
   elId.input.value = v;
